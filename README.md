@@ -1,4 +1,4 @@
-This node RESTful API will help secure the data of Meter for Uber users. This node server will take an encrypted trip and store in a Mongo database. It will also retrieve trips and send encrypted trips back to the client who can decrypt it with the key.
+This node RESTful API will help secure the data of Meter for Uber users. This node server will take an AES256 encrypted trip and store in a Mongo database. It will also retrieve trips and send encrypted trips back to the client who can decrypt it with the key. Note this hasn't gone into production yet, but will shortly with a different key of course.
 
 https://itunes.apple.com/us/app/meter-for-uber-and-lyft/id931234419?mt=8
 
