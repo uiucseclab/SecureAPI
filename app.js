@@ -29,20 +29,19 @@ app.use(function (req, res, next) {
 });
 
 app.post('/trip', function (req, res) {
-    console.log(req.body);
-    var decryptedBody = encryption.decrypt(req.body);
-    console.log(decryptedBody);
+    var decryptedbody = encryption.decrypt(req.body);
+    console.log(decryptedbody);
 
-    var json = JSON.parse(decryptedBody);
+    var json = JSON.parse(decryptedbody);
     console.log(json.meters);
-    
+
 
     var trip = new Trip(json);
     trip.save(function (err) {
         if (err)
             res.send(err);
-    
-        res.json({message: 'Trip saved!'});
+
+        res.json({message: 'trip saved!'});
     });
 
 });

@@ -1,6 +1,6 @@
 var crypto = require('crypto');
 
-var key = new Buffer('85CE6CCF67FBBAA8BB13479C3A6E084D', 'hex');
+var key = new Buffer('9D8A25F94ECF7A256BC3959F5BFE57FB', 'hex');
 
 function encrypt(data) {
     var cipher = crypto.createCipher('aes256', key);
